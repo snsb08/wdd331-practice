@@ -26,7 +26,7 @@
     /* Typography: font family, base size */
     --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-family-heading: 'Playwrite NO', serif;
-    --font-size-base: 16px;
+    --font-size-base: 1rem;
 
     /* Borders: radius */
     --border-radius: 15px;
@@ -95,7 +95,7 @@ body {
 
     h1 {
         /* fluid font size */
-        font-size: clamp(2rem, 4vw, 3.2rem);
+        font-size: clamp( calc(var(--font-size-base)*2), 4vw, calc(var(--font-size-base)*3));
         font-family: var(--font-family-heading);
     }
 
@@ -161,14 +161,14 @@ body {
 
     h3 {
         /* card title styles */
-        font-size: 1rem;
+        font-size: calc(var(--font-size-base)*1.25);
         margin: var(--space-sm) 0;
     }
 
     p {
         /* card body text */
         color: var(--color-text);
-        font-size: 0.875rem;
+        font-size: var(--font-size-base);
     }
 
     .card-meta {
