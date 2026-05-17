@@ -1,0 +1,14 @@
+:root {
+    --color-bg: #9dd1eb;
+    --color-text: #1e293b;
+    /* --color-text: #70e51c; */
+    --color-text-light: #475569;
+
+    --color-primary: #006eb6;
+    --color-primary-hover: #004f7f;
+    --color-secondary: #ee0f0f;
+}
+
+/* p {
+    color: blueviolet;
+} */
