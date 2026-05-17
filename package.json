@@ -1,0 +1,26 @@
+{
+  "name": "wdd331-practice",
+  "version": "1.0.0",
+  "description": "**Student:** Sheyla Norton\r **Semester:** Spring 2026\r **Live Site:** [View Site](https://snsb08.github.io/wdd331-practice/)",
+  "main": "index.js",
+  "scripts": {
+    "build": "lightningcss --bundle --minify --targets \">= 0.25%\" css/main.css -o dist/styles.css",
+    "watch": "chokidar \"css/**/*.css\" -c \"npm run build\" --debounce 600"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snsb08/wdd331-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/snsb08/wdd331-practice/issues"
+  },
+  "homepage": "https://github.com/snsb08/wdd331-practice#readme",
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "lightningcss-cli": "^1.32.0"
+  }
+}

@@ -1,12 +1,32 @@
-*,
+@layer tokens, base, layout, components, utilities;
+
+/* tokens  */
+@import url('tokens/colors.css') layer(tokens);
+@import url('tokens/variables.css') layer(tokens);
+
+/* Base */
+@import url('base/reset.css') layer(base);
+@import url('base/elements.css') layer(base);
+
+/* Layout */
+/* @import url('layout/primary.css') layer(layout); */
+
+/* Components */
+/* @import url('components/card.css') layer(components); */
+
+/* Utilities */
+@import url('utilities/utilities.css') layer(utilities);
+
+
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
-:root {
+/* :root { 
     --color-bg: #f4f6f8;
     --color-text: #1e293b;
     --color-primary: #006eb6;
@@ -17,7 +37,7 @@
     --font-body: system-ui, -apple-system, sans-serif;
 }
 
-body {
+/* body {
   font-family: var(--font-body);
   color: var(--color-text);
   background-color: var(--color-bg);
@@ -31,4 +51,8 @@ a {
 
 a:hover {
   color: var(--color-primary-hover);
-}
+} */
+
+/* p { 
+  color: yellow;
+} */
