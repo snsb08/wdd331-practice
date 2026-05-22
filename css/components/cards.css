@@ -28,11 +28,12 @@
 } */
 
 
-/* .card-grid {
+.card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
   gap: 1.5rem;
+  margin-top: var(--spacing-lg);
 }
 
 .card {
@@ -47,4 +48,4 @@
 
 .card:hover {
   transform: translateY(-5px);
-} */
+}
