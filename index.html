@@ -8,27 +8,38 @@
     <link rel="stylesheet" href="dist/styles.css" />
   </head>
   <body>
-    <h1>Sheyla Norton</h1>
-    <h2>WDD 331R Advanced CSS</h2>
-    <p>
-      I am Sheyla Norton, a student at BYU-Idaho. This page was created to
-      practice and learn advanced CSS techniques. I will be adding more content
-      and styles as I continue to learn. Stay tuned for updates!
-    </p>
-    <nav>
-      <h2>Assignments</h2>
-      <div class="cards">
-        <div class="card">
-          <a href="unit-1/custom-properties/index.html">
-            Custom Properties and Nesting
-          </a>
-        </div>
-        <div class="card">
-          <a href="unit-2/layered-components/index.html">
-            Layered Components
-          </a>
-        </div>
-      </div>
-    </nav>
+    <main class="container">
+      <section class="top-section">
+        <h1>Sheyla Norton</h1>
+        <h2>WDD 331R Advanced CSS</h2>
+        <p>
+          I am Sheyla Norton, a student at BYU-Idaho. This page was created to
+          practice and learn advanced CSS techniques. I will be adding more
+          content and styles as I continue to learn. Stay tuned for updates!
+        </p>
+      </section>
+      <nav>
+        <a href="unit-1/custom-properties/index.html">
+          Custom Properties and Nesting
+        </a>
+
+        <a href="unit-2/layered-components/index.html"> Layered Components </a>
+      </nav>
+      <section class="card-grid">
+        <a href="unit-1/custom-properties/index.html">
+          <article class="card">
+            <h2>Project One</h2>
+            <p>Custom Properties and Nesting</p>
+          </article>
+        </a>
+
+        <a href="unit-2/layered-components/index.html">
+          <article class="card">
+            <h2>Project Two</h2>
+            <p>Layered Components</p>
+          </article></a
+        >
+      </section>
+    </main>
   </body>
 </html>
