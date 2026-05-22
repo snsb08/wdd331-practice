@@ -1,4 +1,4 @@
-.cards {
+/* .cards {
     display: grid;
     gap: var(--spacing-sm);
     grid-template-columns: 1fr 1fr;
@@ -14,9 +14,9 @@
         background-color: var(--color-background);
     }
     
-}
+} */
 
-.card {
+/* .card {
     background-color: var(--color-secondary);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -25,5 +25,26 @@
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid var(--color-primary);
+} */
+
+
+/* .card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 1.5rem;
 }
 
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+} */
