@@ -12,7 +12,7 @@
 /* @import url('layout/primary.css') layer(layout); */
 
 /* Components */
-/* @import url('components/card.css') layer(components); */
+@import url('components/cards.css') layer(components);
 
 /* Utilities */
 @import url('utilities/utilities.css') layer(utilities);
