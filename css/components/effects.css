@@ -55,6 +55,17 @@
     backdrop-filter: blur(1px) saturate(1.4);
 }
 
+.icon-item {
+    
+    &:hover {
+        /* background-color: yellow; */
+    
+    /* filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3)); */
+    /* filter: drop-shadow(0 0 2px rgba(87, 181, 215, 0.5));} */
+    filter: drop-shadow(0 0 2px currentColor);}
+
+}
+
 @media (prefers-reduced-motion: reduce) {
     .glass-panel {
         backdrop-filter: none;
