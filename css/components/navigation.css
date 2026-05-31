@@ -1,0 +1,18 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: var(--spacing-md) var(--spacing-xl);
+
+  /* background: #111827; */
+  background-color: var(--color-accent);
+  color: var(--color-bg-light);
+  box-shadow: var(--shadow-raised-lg);
+
+  a {
+    color: var(--color-bg-light);
+    /* background-color: yellowgreen; */
+    margin-left: var(--spacing-md);
+  }
+}
