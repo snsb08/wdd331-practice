@@ -76,8 +76,8 @@ html {
 
     /* ---- Shadows ---- */
     --shadow-color: light-dark(rgb(0 0 0 / 0.09), rgb(0 0 0 / 0.28));
-    --shadow-color-2: light-dark(oklch(0.2 0 0 / 0.08), rgb(0 0 0 / 0.2));
-    --shadow-color-3: light-dark(oklch(0.2 0 0 / 0.06), rgb(0 0 0 / 0.1));
+    --shadow-color-2: light-dark(oklch(0.2 0 0 / 0.08), oklch(27.804% 0.00549 285.96));
+    --shadow-color-3: light-dark(oklch(0.2 0 0 / 0.06), oklch(8.666% 0.04034 274.053));
     /* --shadow-color-2: yellow; */
     --shadow-sm: 0 1px 2px 0 var(--shadow-color);
     --shadow-md: 0 1px 3px 0 var(--shadow-color);

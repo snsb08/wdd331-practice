@@ -8,7 +8,7 @@ nav {
   /* background: #111827; */
   background-color: var(--color-accent);
   color: var(--color-bg-light);
-  box-shadow: var(--shadow-raised-lg);
+  box-shadow: var(--shadow-raised-md);
 
   a {
     color: var(--color-bg-light);
