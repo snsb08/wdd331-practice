@@ -1,0 +1,22 @@
+
+
+.editorial-page .layout {
+  display: grid;
+  gap: var(--spacing-md);
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "main"
+    "sidebar";
+
+    margin: var(--spacing-md);
+}
+
+
+
+@media (min-width: 768px) {
+  .editorial-page .layout {
+    grid-template-columns: minmax(0, 1fr) 20rem;
+    grid-template-areas: "sidebar main ";
+    align-items: start;
+  }
+}

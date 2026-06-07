@@ -1,0 +1,28 @@
+ .card-grid {
+  display: grid;
+  gap: var(--spacing-md);
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 240px), 1fr)
+  );
+}
+
+.card > div:first-child {
+  height: 12rem;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card > div:last-child {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card a {
+  margin-block-start: auto;
+}
