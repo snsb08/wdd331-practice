@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Container Demo</title>
+    <link rel="stylesheet" href="../../dist/styles.css" />
+    <link rel="stylesheet" href="container-demo.css" />
+  </head>
+  <body>
+    <nav class="site-nav">
+      <a href="../../index.html">&larr; Home</a>
+      <details class="theme-menu">
+        <summary class="theme-control">
+          <span class="visually-hidden">Color scheme</span>
+        </summary>
+        <div class="theme-extra" role="group" aria-label="Choose color scheme">
+          <label class="theme-control theme-pick" data-theme-pick="light">
+            <input name="theme-preference" type="radio" value="light" />
+            <span aria-hidden="true">&#9788;&#65039;</span>
+            <span class="visually-hidden">Light</span>
+          </label>
+          <label class="theme-control theme-pick" data-theme-pick="system">
+            <input
+              name="theme-preference"
+              type="radio"
+              value="system"
+              checked
+            />
+            <span aria-hidden="true">&#9881;&#65039;</span>
+            <span class="visually-hidden">System default</span>
+          </label>
+          <label class="theme-control theme-pick" data-theme-pick="dark">
+            <input name="theme-preference" type="radio" value="dark" />
+            <span aria-hidden="true">&#127766;</span>
+            <span class="visually-hidden">Dark</span>
+          </label>
+        </div>
+      </details>
+    </nav>
+
+    <section class="card-section">
+      <h2>Elevation Cards</h2>
+      <div class="cards">
+        <article class="card">
+          <img
+            class="card-image"
+            src="https://picsum.photos/seed/card-1/400/250"
+            alt="Placeholder image"
+          />
+          <!-- Replace placeholder images with your own if you prefer -->
+          <div class="card-body">
+            <h3>Layered Shadows</h3>
+            <p>
+              Multiple shadow layers create realistic depth that changes on
+              hover.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            class="card-image"
+            src="https://picsum.photos/seed/card-2/400/250"
+            alt="Placeholder image"
+          />
+          <div class="card-body">
+            <h3>Gradient Surfaces</h3>
+            <p>
+              A subtle gradient on the card background adds dimension without
+              distracting from content.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            class="card-image"
+            src="https://picsum.photos/seed/card-3/400/250"
+            alt="Placeholder image"
+          />
+          <div class="card-body">
+            <h3>Filtered Images</h3>
+            <p>
+              A grayscale or sepia filter on the image that lifts on hover draws
+              attention to active cards.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>

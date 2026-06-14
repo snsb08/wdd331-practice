@@ -53,6 +53,7 @@ html {
     --color-bg: light-dark(var(--seed-bg), oklch(0.18 0.02 260));
     --color-surface: light-dark(var(--seed-surface), oklch(0.22 0.03 260));
     --color-text: light-dark(var(--seed-text), oklch(0.88 0.02 260));
+    --color-text-lighter: light-dark(var(--seed-bg), oklch(0.18 0.02 260));
     --color-text-muted: light-dark(var(--seed-text-muted), oklch(0.68 0.03 250));
     --color-accent: light-dark(var(--seed-accent), oklch(0.62 0.15 240));
     --color-accent-hover: light-dark(var(--seed-accent-hover), oklch(0.68 0.18 240));
