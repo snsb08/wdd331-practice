@@ -6,6 +6,8 @@
     border-bottom: 3px solid var(--color-accent);
 }
 
+
+/* I commented this because otherwise the sticky breaks */
 /* .wrapper-header {
     overflow: hidden;
-} */
+} */ 
