@@ -1,0 +1,11 @@
+.board-header {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-bg);
+    color: var(--color-accent);
+    border-bottom: 3px solid var(--color-accent);
+}
+
+/* .wrapper-header {
+    overflow: hidden;
+} */

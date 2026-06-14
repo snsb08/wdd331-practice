@@ -1,0 +1,24 @@
+/* container-type  @container */
+
+.cards { 
+    container-type: inline-size;
+}
+
+/* .card-image {
+    container: image / inline-size;
+} */
+
+.card-body {
+    container: body / inline-size;
+}
+
+@container (min-width: 800px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* .card-body {
+        background-color: blueviolet;
+    } */
+}
