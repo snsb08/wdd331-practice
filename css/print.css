@@ -1,0 +1,15 @@
+@media print {
+ body {
+        font-size: 12pt;
+    }
+ nav,
+ .card,
+ footer {
+        display: none;
+    }
+
+    .card {
+        break-inside: avoid;
+    }
+
+}
