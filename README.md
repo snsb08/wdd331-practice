@@ -19,3 +19,7 @@ every push to main.
 - [Visual Effects](unit-3/visual%20effects/index.html)
 - [Editorial](unit-4/grid-layouts/editorial.html)
 - [Cards](unit-4/grid-layouts/cards.html)
+- [Container Demo](unit-4/advanced/container-demo.html)
+- [Sticky Demo](unit-4/advanced/sticky-demo.html)
+- [Resume](resume.html)
+- [Contact](contact.html)

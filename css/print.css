@@ -1,15 +1,39 @@
-@media print {
+/* @media print {
  body {
         font-size: 12pt;
     }
+
  nav,
  .card,
  footer {
         display: none;
     }
 
-    .card {
+ .card {
         break-inside: avoid;
     }
 
-}
+} */
+
+ body {
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 12pt;
+        line-height: 1.4;
+        max-width: 45em;
+        margin: 0 auto;
+        color: #000;
+    }
+
+ h1 {
+        text-align: center;
+    }
+
+ nav {
+        display: none;
+    }
+
+
+ .card {
+        /* break-inside: avoid; */
+        box-shadow: none;
+    }
