@@ -1,0 +1,120 @@
+@media (prefers-reduced-motion: no-preference) {
+    
+main {
+    margin: var(--spacing-lg);
+}
+
+nav a {
+    
+    
+
+    &:hover, :focus-visible {
+        background-color: var(--color-accent-hover);
+        padding: 0 var(--spacing-sm);
+        border-left: 5px solid var(--color-border);
+        transform: rotate(20deg);
+
+    }
+
+}
+
+.nav-cta {
+
+    &:hover {
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        border-left: 5px solid var(--color-primary-hover); 
+        transform: rotate(-20deg);
+    }
+}
+
+.actions {
+    margin-top: var(--spacing-xl);
+}
+
+.btn {
+    padding: var(--spacing-md);
+    border: none;
+    border-radius: var(--spacing-lg);
+    background: var(--color-accent);
+    color: var(--color-bg-light);
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+    background: var(--color-primary);
+    transform: scale(1.10);
+}
+
+.btn-secondary:hover {
+    background: var(--color-bg-light);
+    color: var(--color-text);
+    /* border: 1px solid var(--color-border); */
+    transform: scale(1.05);
+
+}
+
+.btn-ghost:hover {
+    background: transparent;
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    transform: scale(1.05);
+}
+
+.card-link:hover {
+    transform:rotate(-30deg);
+    transform: scale(1.60);
+    /* background-color: brown; */
+    padding: var(--spacing-md);
+
+}
+
+
+.status-badge {
+  background-color: green;
+  color: white;
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-xs);
+  animation-name: statusPulse;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: center;
+  display: inline-block;
+}
+
+@keyframes statusPulse {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.10);
+    opacity: 0.9;
+  }
+} }
+
+.mover {
+    
+    background-color: rgb(210, 174, 13);
+    width: 20px;
+    height: 20px;
+    /* offset-path: path('M142.919 223.113C35.4464 195.094 -115.016 119.467 142.919 41.1144C465.338 -56.8265 787.153 321.054 1158.48 223.113C1455.54 144.76 1282.25 42.04 1158.48 0.473999'); */
+    offset-path: path('M30.6645 64.7311C7.90166 56.6419 -23.9663 34.8083 30.6645 12.1877C98.9528 -16.0882 167.113 93.007 245.76 64.7311C308.677 42.1105 271.976 12.4549 245.76 0.454651');
+    
+    offset-distance: 0%;
+    offset-rotate: auto;
+    animation: follow-path 2s ease-in-out infinite alternate;
+    transform: scale(1.5); 
+}
+
+@keyframes follow-path {
+    to { offset-distance: 100%; }
+}
+
+.status {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motion Path</title>
+    <link rel="stylesheet" href="motion-path.css" />
+  </head>
+  <body>
+    <h1>Motion Path</h1>
+    <div class="properties">
+      <h2>The Offset Properties</h2>
+      <ul>
+        <li>
+          <strong>offset-path:</strong> Defines the path the element follows.
+          <ul>
+            <li>SVG path string</li>
+            <li>circle()</li>
+            <li>ellipse()</li>
+            <li>url()</li>
+          </ul>
+        </li>
+        <li><strong>offset-distance:</strong>from 0% (start) to 100% (end).</li>
+        <li>
+          <strong>offset-rotate:</strong> Controls the element's rotation as it
+          travels.
+          <ul>
+            <li>auto</li>
+            <li>deg</li>
+          </ul>
+        </li>
+        <li>
+          <strong>offset-anchor:</strong> Which point on the element is pinned
+          to the path.
+        </li>
+        <li>
+          <strong>offset:</strong> Shorthand for all four properties above.
+        </li>
+      </ul>
+    </div>
+    <div class="mover"></div>
+    <div class="mover-2">
+      <svg
+        viewBox="0 0 400 200"
+        style="position: absolute; width: 400px; height: 200px"
+      >
+        <path id="curve" d="M 20 100 C 100 20, 300 20, 380 100" fill="none" />
+      </svg>
+    </div>
+    <div class="transform-only">
+      <ul>
+        <li>
+          <strong>Use transform-only motion</strong> for simple arcs, bounces,
+          and throws where approximate curves are fine and the element does not
+          need to rotate along the path.
+        </li>
+        <li>
+          <strong>Use offset-path</strong> when the path changes direction, when
+          the element must face forward, when the path was designed in a vector
+          tool and needs to be followed precisely, or when you want to animate
+          along a circle or ellipse without trigonometry.
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

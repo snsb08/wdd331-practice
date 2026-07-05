@@ -1,0 +1,84 @@
+
+body {
+    margin: 5rem;
+    font-size: 3rem;
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(45, 61, 164);
+}
+
+h2 {
+    color: rgb(20, 113, 220);
+}
+
+
+
+/* **The Offset Properties */
+
+.properties {
+    display: none;
+}
+
+.mover {
+    
+    background-color: rgb(210, 174, 13);
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes follow-path {
+    to { offset-distance: 100%; }
+}
+
+.mover {
+    offset-path: path('M 20 100 C 100 20, 300 20, 380 100');
+    offset-distance: 0%;
+    offset-rotate: auto;
+    animation: follow-path 2s ease-in-out infinite alternate;
+}
+
+/* **Extracting a Path from SVG */
+
+/* --Paste the d attribute value directly into path() */
+.mover {
+    offset-path: path('M958.799 961.493C998.799 832.326 1009.4 571.393 731.799 560.993C384.799 547.993 450.799 694.993 210.799 627.993C-29.2014 560.993 -83.2014 40.4928 150.799 0.492859');
+}
+
+/* --reference an SVG path by its ID using url(#id) syntax. */
+.mover-2 {
+    offset-path: url(#curve);
+    offset-distance: 0%;
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    offset-rotate: auto;
+    animation: follow-path 2s ease-in-out infinite alternate;
+}
+
+/* **Motion Path vs. Transform-Only Motion */
+
+/* --Fake arc: x moves with ease-out, y with ease-in */
+@keyframes arc-x { to { translate: 600px 0; } }
+@keyframes arc-y { to { translate: 0 520px; } }
+
+.mover {
+    animation:
+        arc-x 0.8s ease-out infinite forwards,
+        arc-y 0.8s ease-in infinite forwards;
+}
+
+.transform-only {
+    display: none; 
+    width: 800px;
+    font-size: 3rem;
+    margin: 5rem;
+}
+
+/* Seeing the Difference */
+
+.mover {
+    offset-rotate: 45deg;
+}
+
