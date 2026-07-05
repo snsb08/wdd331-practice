@@ -23,3 +23,5 @@ every push to main.
 - [Sticky Demo](unit-4/advanced/sticky-demo.html)
 - [Resume](resume.html)
 - [Contact](contact.html)
+- [Motion](unit-6/motion/index.html)
+- [Motion-path](unit-6/motion-path/index.html)
