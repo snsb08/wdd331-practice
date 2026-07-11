@@ -24,4 +24,4 @@ every push to main.
 - [Resume](resume.html)
 - [Contact](contact.html)
 - [Motion](unit-6/motion/index.html)
-- [Motion-path](unit-6/motion-path/index.html)
+- [Accessible SVG Icons System](unit-6/motion/index.html)
