@@ -5,8 +5,6 @@ main {
 }
 
 nav a {
-    
-    
 
     &:hover, :focus-visible {
         background-color: var(--color-accent-hover);
@@ -40,6 +38,7 @@ nav a {
     color: var(--color-bg-light);
     cursor: pointer;
     box-shadow: var(--shadow-sm);
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .btn-primary:hover {
@@ -76,13 +75,19 @@ nav a {
   color: white;
   border-radius: var(--radius-sm);
   padding: var(--spacing-xs);
+  padding-block-end: 0;
+  margin: 1rem;
   animation-name: statusPulse;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   transform-origin: center;
   display: inline-block;
+}
+
+.status-label {
+    margin: 1rem;
 }
 
 @keyframes statusPulse {
@@ -98,15 +103,17 @@ nav a {
 
 .mover {
     
-    background-color: rgb(210, 174, 13);
+    /* background-color: rgb(210, 174, 13); */
+    margin: 1rem;
     width: 20px;
     height: 20px;
+    border-radius: 1px 100px 10px 1px;
     /* offset-path: path('M142.919 223.113C35.4464 195.094 -115.016 119.467 142.919 41.1144C465.338 -56.8265 787.153 321.054 1158.48 223.113C1455.54 144.76 1282.25 42.04 1158.48 0.473999'); */
     offset-path: path('M30.6645 64.7311C7.90166 56.6419 -23.9663 34.8083 30.6645 12.1877C98.9528 -16.0882 167.113 93.007 245.76 64.7311C308.677 42.1105 271.976 12.4549 245.76 0.454651');
     
     offset-distance: 0%;
     offset-rotate: auto;
-    animation: follow-path 2s ease-in-out infinite alternate;
+    animation: follow-path 4s ease-in-out infinite alternate;
     transform: scale(1.5); 
 }
 

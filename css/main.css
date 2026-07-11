@@ -17,6 +17,7 @@
 @import url('components/effects.css') layer(components);
 @import url('components/navigation.css') layer(components);
 @import url('components/forms.css') layer(components);
+@import url('components/icons.css') layer(components);
 
 /* Utilities */
 @import url('utilities/utilities.css') layer(utilities);
