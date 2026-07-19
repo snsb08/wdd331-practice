@@ -1,0 +1,95 @@
+
+Body{
+    margin: 2rem;
+}
+
+.icon-container {
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* A downward-pointing triangle */
+.arrow-down {
+    width: 0;
+    height: 0;
+    background-color: rgb(170, 142, 196);
+    /* border: 8px solid brown; */
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    /* border-left: 8px solid currentColor;
+    border-right: 8px solid currentColor; */
+
+    border-top: 12px solid currentColor;
+}
+
+.chevron-right {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(90deg);
+}
+
+
+/* Hamburger-to Close Morph*/
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 2px;
+    transition:
+        transform 300ms ease-in-out,
+        opacity 200ms ease-in-out,
+        top 300ms ease-in-out;
+}
+
+.hamburger {
+    position: relative;
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.hamburger::before { top: -8px; }
+.hamburger::after  { top:  8px; }
+
+/* Open state */
+.hamburger.is-open {
+    background: transparent; /* hide middle bar */
+}
+
+.hamburger.is-open::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.hamburger.is-open::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+/* ----------- */
+#menu-toggle:checked + .hamburger {
+    background: transparent;
+}
+
+#menu-toggle:checked + .hamburger::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+#menu-toggle:checked + .hamburger::after {
+    top: 0;
+    transform: rotate(-45deg);
+}

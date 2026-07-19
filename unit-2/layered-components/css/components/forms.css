@@ -3,7 +3,7 @@
 
 /* TODO: Style the form components */
 .note-form {
-    background-color: var(--color-secondary);
+    background-color: var(--color-bg-nav);
     padding: var(--spacing-lg);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -24,15 +24,19 @@
    
 }
 
-input, #topic {
+input, #topic, textarea {
    padding: var(--spacing-sm);
+   background-color: var(--color-bg);
 }
 
 :is(input, textarea, select):focus-visible {
-    outline: 2px solid var(--color-primary);
+    outline: 2px solid var(--color-text);
     outline-offset: 2px;
-    background-color: var(--color-background);
+    background-color: var(--color-text-lighter);
 
 }  
 
+label {
+    color: var(--color-text-lighter);
+}
 

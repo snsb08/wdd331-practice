@@ -4,6 +4,15 @@
     --spacing-lg: 2rem; */
     --font-body: helvetica, sans-serif;
 
+    /* Font Families */
+    --font-main-header: "Tilt Prism", sans-serif;
+    /* font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0; */
+
      /* Typography */
     --font-family-sans: system-ui, sans-serif;
     --font-family-mono: monospace;
@@ -52,6 +61,8 @@
     --spacing-md: 16px;
     --spacing-lg: 24px;
     --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+    --spacing-3xl: 64px;
     /* Radii */
     --radius-sm: 4px;
     --radius-md: 6px;
@@ -65,3 +76,5 @@
     /* Focus */
     --outline-width: 2px;
 }
+
+
