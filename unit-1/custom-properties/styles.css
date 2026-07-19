@@ -11,7 +11,7 @@
     /* Colors: at least primary, background, text, accent */
     --color-primary: #7D6D61;
     --color-background: #c3dfe0c4;
-    --color-text: #333;
+    --color-text: var(--color-text);
     --color-text-light: #fff;
     /* --color-accent: #9DAD6F; */
     --color-text-muted: #666;

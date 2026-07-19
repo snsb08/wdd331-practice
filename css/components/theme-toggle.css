@@ -153,3 +153,4 @@ html:has(input[name='theme-preference'][value='system']:checked) {
         transform: translateY(0);
     }
 }
+
